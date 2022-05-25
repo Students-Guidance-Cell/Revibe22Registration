@@ -501,6 +501,7 @@ iframe{
 }
 
 .last{
+    width: 100%;
     display:grid;
     grid-gap:30px;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -525,3 +526,10 @@ background-color:var(--green);
 font-family:Arial;
 color:#E2E2E2 ;
 }
+
+@media only screen and (max-width: 760px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
