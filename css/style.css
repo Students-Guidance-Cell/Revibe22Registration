@@ -526,3 +526,10 @@ background-color:var(--green);
 font-family:Arial;
 color:#E2E2E2 ;
 }
+
+@media only screen and (max-width: 760px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
